@@ -8,7 +8,10 @@ public class Main{
     System.out.println("podaj wysokość tego trójkąta: ");
     int height = scanner.nextInt();
     for(int i = 1; i <= height; i++) {
-      for(int j = 1; j <= i; j++) {
+      for(int j = 1; j < i; j++) {
+        System.out.print(" ");
+      }
+      for(int k = i; k <= height; k++) {
         System.out.print(symbol + " ");
       }
        System.out.println();
